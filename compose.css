@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #FEF7DD;
+    /* margin-bottom: 24px; */
+}
+
+.header{
+    
+
+    display: inline-flex;
+    text-align: center;
+    background-color: #FEF7DD;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    /* align-items: stretch; */
+    justify-content: space-between;
+}
+
+.header > h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.back-arrow{
+    /* float: left; */
+     margin-left: 1vw; 
+    /* background-color: #FEF7DD; */
+    
+}
+.Done-button{
+    float: right;
+    margin-right: 1vw;
+    margin-top: 2vh;
+}
+
+.Editor{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap:0;
+    background-color: #FEF7DD;
+    margin: 2vw;
+    height: 80%;
+    width: 95vw;
+    position: fixed;
+    bottom: 24px;
+    top: 24px;
+
+}
+
+.title{
+    height: 2rem;
+    border-top: 0; border-left: 0; border-right: 0;
+    background-color: #FEF7DD;
+    padding-left: 1vw;
+    padding-bottom: 0;
+    font-size: x-large;
+    border-color: rgb(97, 45, 8, 0.5);
+    margin-bottom: 5px;
+    
+}
+
+.content{
+    box-sizing: content-box;
+    resize: none;
+    height: 100%;
+    width: 97%;
+    padding-left: 1vw;
+    background-color: #FEF7DD;
+    border: none;
+    font-size: 1rem;
+    overflow: scroll;
+}
+
+/* to hide the scrollbar */
+::-webkit-scrollbar{
+    display: none; /* for chrome and safari */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.title::placeholder {
+    color: rgb(97, 45, 8, 0.5);
+    font-size:smaller;
+    vertical-align: bottom;
+  }
+
+
+
+/* textarea::placeholder */
+.content:empty::before {
+    content: 'Write your writ here.';
+    color: #612D08;
+    opacity: 0.5;
+    vertical-align: top;
+    margin: 0;
+    padding-top: 0;
+  }
+    
+input:focus{
+    outline: none;
+    padding-left: 1vw;
+    font-size: x-large;
+}
+
+.content:focus{
+    outline: none;
+    padding-left: 1vw;
+}
+
+.tool-bar{
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    background-color: #FEF7DD;
+    display: inline-flex;
+    justify-content: space-around;
+    height: fit-content;
+    overflow: visible;
+    align-self: center;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+    color: #612D08;
+}
+
+.tool-bar button:focus{
+    transform: scale(2) translate(0, -4px);
+}
+
+a{
+    text-decoration: none;
+    color: #612D08;
+}

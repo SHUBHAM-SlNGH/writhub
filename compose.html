@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="compose.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+</head>
+<body>
+    <div id="Compose">
+        <div class="header">
+            <button  class="back-arrow material-symbols-outlined">arrow_back_ios</button>
+            <h1>Writs</h1> 
+            <button for class="Done-button" onclick="SubmitWrit()" type="submit">Done</button>
+            
+        </div>
+        <form class="Editor">
+            <input class="title" placeholder="Title" type="text">
+            <div class="content" contenteditable="true" placeholder="Write your writ here." name="" id=""></div> <!--change div to textarea-->
+        </form> 
+        <div class="tool-bar">
+            <button class="Bold btn material-symbols-outlined" data-element="bold">format_bold </button>
+            <button class="Italic btn material-symbols-outlined" data-element="italic">format_italic</button>
+            <button class="Align-left btn material-symbols-outlined" data-element="justifyLeft">format_align_left</button>
+            <button class="Align-center btn material-symbols-outlined" data-element="justifyCenter">format_align_center</button>
+            <button class="Align-right btn material-symbols-outlined" data-element="justifyRight">format_align_right</button>
+            <button class="TextSizePlus btn material-symbols-outlined" data-element="increaseFontSize">text_increase</button>
+            <button class="TextSizeMinus btn material-symbols-outlined" data-element="decreaseFontSize">text_decrease</button>
+        </div>
+        <script src="compose.js"></script>
+    </div>
+</body>
+</html>
